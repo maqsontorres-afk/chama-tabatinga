@@ -2,7 +2,7 @@ const PROMO_MONTHS = 3;
 const PROMO_PRICE = 20;
 const NORMAL_PRICE = 40;
 
-fetch("data.json")
+fetch("data.json?v=" + Date.now(), { cache: "no-store" })
   .then(res => res.json())
   .then(data => render(data));
 
@@ -50,3 +50,4 @@ function render(data) {
   search.addEventListener("input", draw);
   draw();
 }
+
