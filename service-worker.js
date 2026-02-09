@@ -1,6 +1,6 @@
 self.addEventListener("install", e => {
   e.waitUntil(
-    caches.open("chama-v2").then(c =>
+    caches.open("chama-v3").then(c =>
       c.addAll([
         "./",
         "./index.html",
@@ -11,4 +11,5 @@ self.addEventListener("install", e => {
     )
   );
 });
+
 
