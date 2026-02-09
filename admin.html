@@ -8,22 +8,32 @@
 </head>
 
 <body>
-<h2>⚙️ Cadastro de Anunciantes</h2>
+  <h2>Cadastro de Anunciantes</h2>
 
-<form id="form">
-  <input placeholder="Nome" id="name" required>
-  <input placeholder="Categoria" id="category" required>
-  <input placeholder="Cidade" id="city" required>
-  <input placeholder="Bairro / Área" id="area" required>
-  <input placeholder="WhatsApp (5592...)" id="phone" required>
-  <input type="date" id="joined" required>
-  <label><input type="checkbox" id="pix"> Aceita Pix</label>
-  <button type="submit">Adicionar</button>
-</form>
+  <form id="form">
+    <input id="name" placeholder="Nome do profissional ou serviço" required>
 
-<pre id="output"></pre>
+    <input id="category" placeholder="Categoria (ex: Dentista)" required>
 
-<script src="admin.js"></script>
+    <input id="city" placeholder="Cidade (Tabatinga / Benjamin Constant / Letícia)" required>
+
+    <input id="area" placeholder="Bairro / Área" required>
+
+    <input id="phone" placeholder="WhatsApp (5592999999999)" required>
+
+    <input id="joined" type="date" required>
+
+    <label>
+      <input type="checkbox" id="pix">
+      Aceita Pix
+    </label>
+
+    <button type="submit">Adicionar</button>
+  </form>
+
+  <h3>JSON gerado</h3>
+  <pre id="output"></pre>
+
+  <script src="admin.js"></script>
 </body>
 </html>
-
